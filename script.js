@@ -1,5 +1,9 @@
 
-const text = document.querySelector('h2');
+
+const text = document.getElementById('days, hours, minutes, seconds');
+
+
+
 
 function getChrono() {
     const now = new Date().getTime();
@@ -15,6 +19,8 @@ function getChrono() {
     text.innerText = `${days}j ${hours}h ${minutes}m ${seconds}s`;
 
 }
+
+
 
 getChrono()
 
