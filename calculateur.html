@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur</title>
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+
+<body class="test">
+    <header>
+        <nav class="navbar">
+            <img src="./logo/CO2-logo.svg" alt="Logo CO2WEB">
+
+            <div class="nav-links">
+                <a class="links active" href="index.html">Accueil</a>
+                <a class="links active" href="emploi.html">Mode d'emploi</a>
+                <a class="links active" href="velib.html">Trouver un velib</a>
+                <a class="links active" href="calculateur.html">Calculateur</a>
+                <a class="links active" href="apropos.html">A propos</a>
+                <a class="links active" href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="calculator">
+            <header>
+                <h1>Calculateur de Distance Hebdomadaire</h1>
+            </header>
+            <label for="distanceParJour">Votre Distance parcourue par jour (en kilomètres) :</label>
+            <input type="text" id="distanceParJour" placeholder="www.exemple.com" />
+
+            <label for="joursTravailles">Nombre de jours travaillés par semaine :</label>
+            <input type="text" id="joursTravailles" placeholder="Nombre" />
+
+            <input type="submit" id="calculer" />
+            <div id="resultat"></div>
+            <footer>
+                <p id="mention">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les
+                    informations
+                    soient inscrites et stockées dans notre base de données publique.</p>
+            </footer>
+        </article>
+    </main>
+    <script>
+        document.getElementById('calculer').addEventListener('click', function () {
+            document.getElementById('resultat').innerHTML = document.getElementById('distanceParJour').value * 0.12 * document.getElementById('joursTravailles').value;
+        });
+    </script>
+
+
+</body>
+
+</html>
