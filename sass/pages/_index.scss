@@ -1,0 +1,12 @@
+.navbar{
+  width: 100%;
+  @include flex-start-row;
+
+  .nav-links{
+
+    .links{
+      font-family: $title-font;
+      @include flex-center-row-space-between
+    }
+  }
+}
