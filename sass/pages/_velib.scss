@@ -23,3 +23,32 @@ body {
 
 }
 
+.navbar {
+    width: 100%;
+    @include flex-start-row;
+    gap: 50px;
+    padding-left: 100px;
+    padding: 15px 0px 15px 100px;
+    border-bottom: 2.5px solid rgba(128, 128, 128, 0.274);
+
+    img {
+        width: 9%;
+    }
+
+    .nav-links {
+        @include flex-start-row;
+        gap: 30px;
+
+        .links {
+            text-decoration: none;
+            color: $greencolor1;
+            font-family: $primary-font;
+            font-size: large;
+            @include flex-center-row-space-between;
+        }
+
+        .links:hover {
+            text-decoration: underline;
+        }
+    }
+}
