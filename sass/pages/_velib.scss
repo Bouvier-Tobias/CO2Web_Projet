@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100vh;
-    min-width: auto;
+    max-height: 100vh;
+    max-width: auto;
+
 
 
 
@@ -11,8 +12,8 @@
 
 
     .compteur {
-        min-height: 100vh;
-        min-width: auto;
+        height: 90vh;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
