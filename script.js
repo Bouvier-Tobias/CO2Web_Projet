@@ -13,7 +13,7 @@ const unJourEnMs = 1000 * 60 * 60 * 24;
 const uneHeureEnMs = 1000 * 60 * 60;
 const uneMinuteEnMs = 1000 * 60
 
-const comingSoon = new Date("April 4, 2025");
+const comingSoon = new Date("January 5, 2025");
 
 const getCountdown = () => {
 
