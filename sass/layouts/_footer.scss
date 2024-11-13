@@ -1,15 +1,11 @@
-.index-body{
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  max-height: auto;
+
 
   footer{
     bottom: 0;
     position: absolute;
     width: 100%;
     border-top: 2.5px solid $greencolor2;
-    
+
     .footer-links{
       display: flex;
       justify-content: end;
@@ -28,6 +24,4 @@
       }
     }
   }
-
-}
 
