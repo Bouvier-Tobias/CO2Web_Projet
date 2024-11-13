@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculateur</title>
     <link rel="stylesheet" href="./sass/style.css">
-    <script src="calculateur.js"></script>
 </head>
 
 <body class="test">
@@ -29,37 +28,25 @@
             <header>
                 <h1>Calculateur de Distance Hebdomadaire</h1>
             </header>
+            <button id="openModal">Ouvrir la modale</button>
 
-            <div class="modal-container">
-
-                <div class="overlay modal-trigger"></div>
-
-                <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-                    <button aria-label="close modal" class="close-modal modal-trigger">X</button>
-                    <h1 id="modalTitle">Voici du Contenu</h1>
-                    <p id="dialogDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam exercitationem
-                        nihil veritatis sapiente quia.</p>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <h2>Bienvenue dans la modale !</h2>
+                    <p>Ceci est une fenêtre modale.</p>
                 </div>
-
             </div>
 
-            <button class="modal-btn modal-trigger">Open Modal</button>
 
-            <label for="distanceParJour">Votre Distance parcourue par jour (en kilomètres) :</label>
-            <input type="text" id="distanceParJour" placeholder="www.exemple.com" />
 
-            <label for="joursTravailles">Nombre de jours travaillés par semaine :</label>
-            <input type="text" id="joursTravailles" placeholder="Nombre" />
-
-            <input type="submit" id="calculer" value="commencer" />
-            <div id="resultat"></div>
-            <footer>
-                <p id="mention">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les
-                    informations
-                    soient inscrites et stockées dans notre base de données publique.</p>
+            <p id="mention">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les
+                informations
+                soient inscrites et stockées dans notre base de données publique.</p>
             </footer>
         </article>
     </main>
 </body>
+<script src="calculateur.js"></script>
 
 </html>
