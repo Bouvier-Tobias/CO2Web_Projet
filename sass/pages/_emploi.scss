@@ -10,9 +10,10 @@
 
     .steps {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
         gap: 20px;
+        flex-wrap: nowrap;
     }
 
     .step {
