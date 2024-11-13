@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+}
+
+.mode-demploi {
+    text-align: center;
+    padding: 50px 20px;
+
+    h1 {
+        font-size: 2rem;
+        color: $blackcolor;
+        margin-bottom: 30px;
+    }
+
+    .steps {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .step {
+        background-color: $whitecolor;
+        padding: 20px;
+        width: 280px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        &.highlighted {
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: $blackcolor;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: $blackcolor;
+        }
+    }
+}
