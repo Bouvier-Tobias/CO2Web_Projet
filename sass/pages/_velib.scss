@@ -1,5 +1,9 @@
-body {
+.velib-body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 100vw;
 
     h2 {
         display: flex;
@@ -23,32 +27,49 @@ body {
 
 }
 
-.navbar {
-    width: 100%;
-    @include flex-start-row;
-    gap: 50px;
-    padding-left: 100px;
-    padding: 15px 0px 15px 100px;
-    border-bottom: 2.5px solid rgba(128, 128, 128, 0.274);
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    padding: 40px 80px;
+    border-radius: 10px;
+}
 
-    img {
-        width: 9%;
-    }
+#title {
+    font-size: 60px;
+    font-family: "Pacifico", cursive;
+}
 
-    .nav-links {
-        @include flex-start-row;
-        gap: 30px;
+#minuteur {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 25px;
+    margin: 10vh auto;
+}
 
-        .links {
-            text-decoration: none;
-            color: $greencolor1;
-            font-family: $primary-font;
-            font-size: large;
-            @include flex-center-row-space-between;
-        }
+.box {
+    height: 200px;
+    text-align: center;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
 
-        .links:hover {
-            text-decoration: underline;
-        }
-    }
+.box>div:first-child {
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.unite {
+    padding: 10px 20px;
+    background-color: #0a0a0a;
+    font-size: 20px;
 }
