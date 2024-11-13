@@ -3,7 +3,7 @@
   @include flex-start-row;
   gap: 50px;
   padding: 15px 0px 15px 100px;
-  border-bottom: 2.5px solid rgba(128, 128, 128, 0.274);
+  border-bottom: 2.5px solid #80808046;
   background-color: $whitecolor;
 
     .img-nav{
@@ -23,7 +23,10 @@
           }
       
     }
-            
+      .active{
+        font-weight: 700;
+      }
+
       .links:hover{
         text-decoration: underline;
       }
