@@ -3,73 +3,90 @@
     padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: auto;
 
-    h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        color: black;
-    }
 
-    p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        font-size: 10px;
-        color: black;
-    }
 
-    #wrapper {
+
+
+
+    .compteur {
+        min-height: 100vh;
+        min-width: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(8px);
-        padding: 40px 80px;
-        border-radius: 10px;
-    }
-
-    #title {
-        font-size: 60px;
-        font-family: "Pacifico", cursive;
-    }
-
-    #minuteur {
-        display: grid;
-        grid-template-columns: repeat(4, 200px);
-        gap: 25px;
-        margin: 10vh auto;
-    }
-
-    .box {
-        height: 200px;
-        text-align: center;
-        background-color: #1b1b1b;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box>div:first-child {
-        font-size: 130px;
-        display: flex;
         justify-content: center;
         align-items: center;
-        flex: 1;
-        padding: 20px;
-    }
 
-    .unite {
-        padding: 10px 20px;
-        background-color: #0a0a0a;
-        font-size: 20px;
-    }
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(8px);
+            padding: 0 80px;
+            border-radius: 10px;
+            height: 100px;
+        }
 
+        #title {
+            font-size: 60px;
+            font-family: "Pacifico", cursive;
+        }
+
+        #minuteur {
+            display: grid;
+            grid-template-columns: repeat(4, 80px);
+            margin: 10vh auto;
+        }
+
+        .box {
+            margin: 0;
+            padding: 0;
+            height: 80px;
+            width: 70px;
+            text-align: center;
+            background-color: $greencolor1;
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            .unite {
+                margin: 0;
+                font-size: 0.5em;
+                color: white;
+                padding-bottom: 10px;
+                font-family: $title-font;
+                font-weight: 800;
+            }
+        }
+
+        .box>div:first-child {
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            color: black;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            font-size: 10px;
+            color: black;
+        }
+    }
 
 }
