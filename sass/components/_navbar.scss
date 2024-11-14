@@ -32,5 +32,17 @@
       }
 }
 
+@media screen and (max-width: 980px){
+  .navbar{
+    .img-nav{
+      font-size: 150px;
+    }
+    .nav-links{
+        display: none;
+    }
+
+  }
+}
+
 
 
