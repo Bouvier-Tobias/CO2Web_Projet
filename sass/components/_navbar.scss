@@ -6,8 +6,12 @@
   border-bottom: 2.5px solid #80808046;
   background-color: $whitecolor;
 
+  .bx{
+    display: none;
+  }
+
   .img-nav {
-    width: 9%;
+    width: 150px;
   }
 
   .nav-links {
@@ -33,17 +37,33 @@
   }
 }
 
-@media screen and (max-width: 980px) {
-  .navbar {
-    .img-nav {
-      font-size: 150px;
+@media screen and (max-width: 1366px){
+  body{
+    width: 100%;
+  }
+  .navbar{
+    min-width: 100%;
+    justify-content: left;
+    .img-nav{
+      font-size: 20%;
+    }
+    .nav-links{
+      width: 100%;
+      gap: 2%;
     }
 
-    .nav-links {
+  }
+}
+
+@media screen and (max-width: 768px){
+  .navbar{
+    width: 100%;
+    padding-left: 40px;
+    .nav-links{
       display: none;
     }
 
-    .bx {
+    .bx{
       display: block;
       position: absolute;
       right: 3%;
@@ -52,8 +72,8 @@
       font-weight: 700;
     }
 
-
+    
 
   }
-
+  
 }
