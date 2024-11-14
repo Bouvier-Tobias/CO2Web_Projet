@@ -23,34 +23,22 @@
             </div>
         </nav>
     </header>
-    <main class="main.cal">
+    <main class="cal">
         <article class="calculator">
-            <header>
-                <h1>Calculateur de Distance Hebdomadaire</h1>
-            </header>
-            <section class="calculateur">
-                <label for="texte">Votre Distance parcourue par jour en (en kilomètres):</label>
-                <input type="texte" placeholder="www.exemple.com">
-                <label for="texte2">Nombre de jours travaillés par semaine :</label>
-                <input type="text" placeholder="Nombre">
-                <button id="openModal">Commencer</button>
+            <h2>Calculateur d'émissions de C02 Trajecs domicile/travail en voiture</h2>
 
-                <div id="modal" class="modal">
-                    <div class="modal-content">
-                        <span id="closeModal" class="close">&times;</span>
-                        <h2>Les émissions de CO2 pour les trajets domicile / travail en voiture sont de 12.00 kg par
-                            mois.</h2>
-                        <p>Ceci est une fenêtre modale.</p>
-                    </div>
-                </div>
-            </section>
+            <label for="distanceParJour">Votre distance parcourue par jour (en Kilomètres):</label>
+            <input type="number" id="distanceParJour" step="1" min="0">
 
+            <label for="joursTravailles">Nombre de jours travaillés par semaines:</label>
+            <input type="number" id="joursTravailles" min="1" max="7">
 
+            <button id="calculer">Commencer</button>
 
-            <p id="mention">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les
-                informations
-                soient inscrites et stockées dans notre base de données publique.</p>
-            </footer>
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal" id="modal">
+                <p id="resultat"></p>
+                <span id="closeModal"></span>
         </article>
     </main>
     <footer>
