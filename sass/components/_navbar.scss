@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   z-index: 1;
   @include flex-start-row;
   gap: 50px;
@@ -6,67 +6,44 @@
   border-bottom: 2.5px solid #80808046;
   background-color: $whitecolor;
 
-    .img-nav{
-    width: 150px;
-    }
-  
-    .nav-links{
-      @include flex-start-row;
-      gap: 30px;
-
-        .links{
-          text-decoration: none;
-          color: $greencolor1;
-          font-family: $primary-font;
-          font-size: large;
-          @include flex-center-row-space-between;
-          }
-      
-    }
-      .active{
-        font-weight: 700;
-      }
-
-      .links:hover{
-        text-decoration: underline;
-      }
-
-      .bx{
-        display: none;
-      }
-
-      .bx:hover{
-        cursor: pointer;
-      }
-}
-
-@media screen and (max-width: 1366px){
-  body{
-    width: 100%;
+  .img-nav {
+    width: 9%;
   }
-  .navbar{
-    min-width: 100%;
-    justify-content: left;
-    .img-nav{
-      font-size: 20%;
-    }
-    .nav-links{
-      width: 100%;
-      gap: 2%;
+
+  .nav-links {
+    @include flex-start-row;
+    gap: 30px;
+
+    .links {
+      text-decoration: none;
+      color: $greencolor1;
+      font-family: $primary-font;
+      font-size: large;
+      @include flex-center-row-space-between;
     }
 
   }
+
+  .active {
+    font-weight: 700;
+  }
+
+  .links:hover {
+    text-decoration: underline;
+  }
 }
 
-@media screen and (max-width: 768px){
-  .navbar{
-    width: 100%;
-    padding-left: 40px;
-    .nav-links{
+@media screen and (max-width: 980px) {
+  .navbar {
+    .img-nav {
+      font-size: 150px;
+    }
+
+    .nav-links {
       display: none;
     }
 
-    .bx{
+    .bx {
       display: block;
       position: absolute;
       right: 3%;
@@ -75,11 +52,8 @@
       font-weight: 700;
     }
 
-    
+
 
   }
-  
+
 }
-
-
-
