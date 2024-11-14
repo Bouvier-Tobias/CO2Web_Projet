@@ -25,20 +25,24 @@
     </header>
     <main class="cal">
         <article class="calculator">
-            <h2>Calculateur d'émissions de C02 Trajecs domicile/travail en voiture</h2>
+            <h2 class="title-cal">Calculateur d'émissions de C02 <br> Trajecs domicile/travail en voiture</h2>
+            <div class="calcul">
 
-            <label for="distanceParJour">Votre distance parcourue par jour (en Kilomètres):</label>
-            <input type="number" id="distanceParJour" step="1" min="0">
+                <label for="distanceParJour">Votre distance parcourue par jour (en Kilomètres):</label>
+                <input type="number" id="distanceParJour" step="1" min="0">
 
-            <label for="joursTravailles">Nombre de jours travaillés par semaines:</label>
-            <input type="number" id="joursTravailles" min="1" max="7">
+                <label for="joursTravailles">Nombre de jours travaillés par semaines:</label>
+                <input type="number" id="joursTravailles" min="1" max="7">
 
-            <button id="calculer">Commencer</button>
+                <button id="calculer">Commencer</button>
 
-            <div class="modal-overlay" id="modalOverlay"></div>
-            <div class="modal" id="modal">
-                <p id="resultat"></p>
-                <span id="closeModal"></span>
+                <div class="modal-overlay" id="modalOverlay"></div>
+                <p>En utilisant cette calculatrice d'émission de carbone, vous acceptez que les informations soient
+                    inscrites et stockées dans notre base de données publique.</p>
+                <div class="modal" id="modal">
+                    <p id="resultat"></p>
+                    <span id="closeModal"></span>
+                </div>
         </article>
     </main>
     <footer>
