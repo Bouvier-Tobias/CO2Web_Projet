@@ -6,9 +6,6 @@
   border-bottom: 2.5px solid #80808046;
   background-color: $whitecolor;
 
-  .bx{
-    display: none;
-  }
 
   .img-nav {
     width: 150px;
@@ -27,6 +24,64 @@
     }
 
   }
+
+  .box{
+    background-color: #fff;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+
+    .container-lignes{
+      // background-color: rgb(163, 163, 163);
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .ligne{
+        background-color: black;
+        position: absolute;
+        border-radius: 10px;
+        width: 35px;
+        height: 6px;
+      }
+    }
+  }
+    .box .ligne:nth-child(1){
+      top: 0px;
+    }
+    .box .ligne:nth-child(2){
+      top: 14px;
+    }
+    .box .ligne:nth-child(3){
+      top: 28px;
+    }
+
+    .b1 .ligne:nth-child(1), .ligne:nth-child(3){
+      transform: rotate(0deg);
+      transition: transform 0.4s 0.4s ease-in-out, top 0.4s ease-in-out;
+    }
+    //animation button
+    .b1.active .ligne:nth-child(1){
+      top: 14px;
+      transform: rotate(45deg);
+      transition: transform 0.4s ease-in-out, top 0.4s 0.4s ease-in-out;
+    }
+    .b1.active .ligne:nth-child(2){
+      opacity: 0;
+    }
+    .b1.active .ligne:nth-child(3){
+      top: 14px;
+      transform: rotate(-45deg);
+      transition: transform 0.4s 0.4s ease-in-out, top 0.4s ease-in-out;
+    }
+    
 
   .active {
     font-weight: 700;
@@ -62,18 +117,6 @@
     .nav-links{
       display: none;
     }
-
-    .bx{
-      display: block;
-      position: absolute;
-      right: 3%;
-      font-size: 2.5em;
-      color: $greencolor3;
-      font-weight: 700;
-    }
-
-    
-
   }
   
 }
