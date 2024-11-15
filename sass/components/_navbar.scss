@@ -26,6 +26,7 @@
   }
 
   .box{
+    display: none;
     background-color: #fff;
     margin: 10px;
     width: 60px;
@@ -36,7 +37,6 @@
     position: relative;
 
     .container-lignes{
-      // background-color: rgb(163, 163, 163);
       width: 35px;
       height: 35px;
       position: absolute;
@@ -45,7 +45,7 @@
       transform: translate(-50%, -50%);
 
       .ligne{
-        background-color: black;
+        background-color: $greencolor3;
         position: absolute;
         border-radius: 10px;
         width: 35px;
@@ -63,23 +63,36 @@
       top: 28px;
     }
 
+    //animation button
+    .b1 .ligne:nth-child(2){
+      transition: opacity 0.15s 0.15s ease-in-out;
+    }
+
     .b1 .ligne:nth-child(1), .ligne:nth-child(3){
       transform: rotate(0deg);
-      transition: transform 0.4s 0.4s ease-in-out, top 0.4s ease-in-out;
+      transition:
+      transform 0.15s ease-in-out,  
+      top 0.15s 0.15s ease-in-out;
     }
-    //animation button
+
     .b1.active .ligne:nth-child(1){
       top: 14px;
       transform: rotate(45deg);
-      transition: transform 0.4s ease-in-out, top 0.4s 0.4s ease-in-out;
+      transition:
+      top 0.15s ease-in-out,
+      transform 0.15s 0.15s ease-in-out;
     }
     .b1.active .ligne:nth-child(2){
       opacity: 0;
+      transition: opacity 0.15s ease-in-out;
+
     }
     .b1.active .ligne:nth-child(3){
       top: 14px;
       transform: rotate(-45deg);
-      transition: transform 0.4s 0.4s ease-in-out, top 0.4s ease-in-out;
+      transition: 
+      top 0.15s ease-in-out, 
+      transform 0.15s 0.15s ease-in-out;
     }
     
 
@@ -110,13 +123,44 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
+  body{
+    max-width: 100%;
+  }
   .navbar{
-    width: 100%;
+    max-width: 100%;
     padding-left: 40px;
+
+    .nav-links{
+      max-width: 100%;
+    }
+
+    .box{
+      display: block;
+      position: absolute;
+      left: 75%;
+    }
     .nav-links{
       display: none;
     }
+
+    
   }
   
+}
+
+@media screen and (max-width: 360px){
+  .navbar{
+    width: 100%;
+    padding-left: 40px;
+
+    .box{
+      display: block;
+      position: absolute;
+      left: 75%;
+    }
+    .nav-links{
+      display: none;
+    }
+}
 }

@@ -1,9 +1,13 @@
-const allBoxes = document.querySelectorAll(".box");
+const allBoxes = document.querySelectorAll('.box');
+const box = document.querySelector('.box');
 
-allBoxes.forEach(box => {
-  box.addEventListener('click', e => {
+// allBoxes.forEach(box => {
+//   box.addEventListener('click', e =>{
+//     e.target.classlist.toggle('.active');
+//   })
+// })
 
-    e.target.classList.toggle("active");
-  })
+box.addEventListener("click", () => {
+  box.classList.toggle("active");
+
 })
-
