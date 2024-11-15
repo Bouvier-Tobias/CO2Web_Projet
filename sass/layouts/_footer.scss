@@ -4,6 +4,7 @@ footer {
   width: 100%;
   border-top: 2.5px solid $greencolor2;
 
+
   .footer-links {
     display: flex;
     justify-content: end;
@@ -14,11 +15,35 @@ footer {
       font-weight: 700;
     }
 
-    .links {
+    a {
       text-decoration: none;
       color: $greencolor1;
       font-family: $primary-font;
       font-size: large;
     }
+
+    div {
+      display: flex;
+      gap: 40px;
+    }
   }
+
+  @media screen and (max-width: 360px) {
+    .footer-links {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      display: flex;
+      flex-direction: column;
+
+
+      div {
+        display: flex;
+        gap: 20px;
+      }
+
+
+    }
+  }
+
 }
