@@ -7,14 +7,14 @@
         align-items: center;
         padding: 10vh;
         font-family: "Montserrat", sans-serif;
-        ;
+
 
     }
 
     .calcul {
 
-        font-family: "Roboto", sans-serif;
-        ;
+        font-family: "Roboto regular", sans-serif;
+        font-size: large 18px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29,6 +29,45 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        .cal-btn {
+            width: 100%;
+            @include flex-center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            margin-top: 50px;
+
+            .cal-begin-btn {
+                background: rgb(181, 214, 83);
+                background: linear-gradient(150deg, rgba(181, 214, 83, 1) 0%, rgba(121, 197, 88, 1) 32%, rgba(61, 173, 92, 1) 74%);
+                color: $whitecolor;
+                font-size: 1.2em;
+                font-family: $title-font;
+                font-weight: 500;
+                width: 150px;
+                height: 50px;
+                border: none;
+                border-radius: 100px;
+                box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.315);
+            }
+
+            .cal-begin-btn:hover {
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+                background: $greencolor1;
+            }
+
+            .btn-p {
+                font-family: $primary-font;
+                font-size: 0.8em;
+                color: $blackcolor2;
+                font-weight: 500;
+            }
+
+        }
+
 
         .modal {
 
@@ -56,6 +95,8 @@
             height: 100%;
             z-index: 999;
         }
+
+
 
     }
 
