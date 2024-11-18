@@ -25,7 +25,7 @@
 
   }
 
-  .box{
+  .box {
     display: none;
     background-color: #fff;
     margin: 10px;
@@ -36,7 +36,7 @@
     border-radius: 5px;
     position: relative;
 
-    .container-lignes{
+    .container-lignes {
       width: 35px;
       height: 35px;
       position: absolute;
@@ -44,7 +44,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
-      .ligne{
+      .ligne {
         background-color: $greencolor3;
         position: absolute;
         border-radius: 10px;
@@ -53,48 +53,54 @@
       }
     }
   }
-    .box .ligne:nth-child(1){
-      top: 0px;
-    }
-    .box .ligne:nth-child(2){
-      top: 14px;
-    }
-    .box .ligne:nth-child(3){
-      top: 28px;
-    }
 
-    //animation button
-    .b1 .ligne:nth-child(2){
-      transition: opacity 0.15s 0.15s ease-in-out;
-    }
+  .box .ligne:nth-child(1) {
+    top: 0px;
+  }
 
-    .b1 .ligne:nth-child(1), .ligne:nth-child(3){
-      transform: rotate(0deg);
-      transition:
-      transform 0.15s ease-in-out,  
+  .box .ligne:nth-child(2) {
+    top: 14px;
+  }
+
+  .box .ligne:nth-child(3) {
+    top: 28px;
+  }
+
+  //animation button
+  .b1 .ligne:nth-child(2) {
+    transition: opacity 0.15s 0.15s ease-in-out;
+  }
+
+  .b1 .ligne:nth-child(1),
+  .ligne:nth-child(3) {
+    transform: rotate(0deg);
+    transition:
+      transform 0.15s ease-in-out,
       top 0.15s 0.15s ease-in-out;
-    }
+  }
 
-    .b1.active .ligne:nth-child(1){
-      top: 14px;
-      transform: rotate(45deg);
-      transition:
+  .b1.active .ligne:nth-child(1) {
+    top: 14px;
+    transform: rotate(45deg);
+    transition:
       top 0.15s ease-in-out,
       transform 0.15s 0.15s ease-in-out;
-    }
-    .b1.active .ligne:nth-child(2){
-      opacity: 0;
-      transition: opacity 0.15s ease-in-out;
+  }
 
-    }
-    .b1.active .ligne:nth-child(3){
-      top: 14px;
-      transform: rotate(-45deg);
-      transition: 
-      top 0.15s ease-in-out, 
+  .b1.active .ligne:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+
+  }
+
+  .b1.active .ligne:nth-child(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+    transition:
+      top 0.15s ease-in-out,
       transform 0.15s 0.15s ease-in-out;
-    }
-    
+  }
+
 
   .active {
     font-weight: 700;
@@ -105,17 +111,20 @@
   }
 }
 
-@media screen and (max-width: 1366px){
-  body{
+@media screen and (max-width: 1366px) {
+  body {
     width: 100%;
   }
-  .navbar{
+
+  .navbar {
     min-width: 100%;
     justify-content: left;
-    .img-nav{
+
+    .img-nav {
       font-size: 20%;
     }
-    .nav-links{
+
+    .nav-links {
       width: 100%;
       gap: 2%;
     }
@@ -123,44 +132,44 @@
   }
 }
 
-@media only screen and (max-width: 768px){
-  body{
+@media only screen and (max-width: 768px) {
+  body {
     max-width: 100%;
   }
-  .navbar{
+
+  .navbar {
     max-width: 100%;
     padding-left: 40px;
 
-    .nav-links{
+    .nav-links {
       max-width: 100%;
     }
 
-    .box{
+    .box {
       display: block;
       position: absolute;
       left: 75%;
     }
-    .nav-links{
-      display: none;
-    }
 
-    
+
   }
-  
+
 }
 
-@media screen and (max-width: 360px){
-  .navbar{
+@media screen and (max-width: 360px) {
+  .navbar {
     width: 100%;
     padding-left: 40px;
 
-    .box{
+    .box {
       display: block;
       position: absolute;
       left: 75%;
     }
-    .nav-links{
-      display: none;
+
+
+    .nav-links {
+      display: none
     }
-}
+  }
 }
