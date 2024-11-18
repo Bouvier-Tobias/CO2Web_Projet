@@ -21,18 +21,36 @@
                 <a class="links" href="apropos.html">A propos</a>
                 <a class="links" href="contact.html">Contact</a>
             </div>
+            <button class="box b1">
+                <div class="container-lignes">
+                    <div class="ligne"></div>
+                    <div class="ligne"></div>
+                    <div class="ligne"></div>
+                </div>
+            </button>
         </nav>
     </header>
     <main class="cal">
         <article class="calculator">
-            <h2 class="title-cal">Calculateur d'émissions de C02 <br> Trajecs domicile/travail en voiture</h2>
+            <h1 class="title-cal">Calculateur d'émissions de C02 <br> Trajecs domicile/travail en voiture</h1>
+
+            <section class="plants">
+                <div class="cal-plan1"> <img src="./co2WEB/co2 WEB/Groupe27.svg"></div>
+                <div class="cal-plan2"><img src="./co2WEB/co2 WEB/TracÔÇÜ76.svg"></div>
+                <div class="cal-plan3"><img src="./co2WEB/co2 WEB/TracÔÇÜ69.svg"></div>
+            </section>
+            <section class="circles">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+            </section>
             <div class="calcul">
 
-                <label for="distanceParJour">Votre distance parcourue par jour (en Kilomètres):</label>
-                <input type="number" id="distanceParJour" step="1" min="0">
+                <label for="distanceParJour" class="labelN">Votre distance parcourue par jour (en Kilomètres):</label>
+                <input type="number" id="distanceParJour" class="inputN" step="1" min="0">
 
-                <label for="joursTravailles">Nombre de jours travaillés par semaines:</label>
-                <input type="number" id="joursTravailles" min="1" max="7">
+                <label for="joursTravailles" class="labelN">Nombre de jours travaillés par semaines:</label>
+                <input type="number" id="joursTravailles" class="inputN min=" 1" max="7">
 
 
                 <div class="cal-btn">
@@ -61,5 +79,6 @@
     </footer>
 </body>
 <script src="calculateur.js"></script>
+<script src="./navbar.js"></script>
 
 </html>
