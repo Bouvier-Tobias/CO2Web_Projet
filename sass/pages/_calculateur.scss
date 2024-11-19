@@ -17,7 +17,6 @@
     .calcul {
 
         font-family: $title-font;
-
         font-size: large 18px;
         display: flex;
         flex-direction: column;
@@ -36,10 +35,54 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
+        .underline {
+
+            position: absolute;
+            align-items: center;
+            bottom: 69%;
+            height: 1px;
+            width: 76%;
+            background-color: #a3a3a3;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .underline2 {
+
+            position: absolute;
+            align-items: center;
+            bottom: 42%;
+            height: 1px;
+            width: 76%;
+            background-color: #a3a3a3;
+            transition: width 0.3s ease-in-out;
+        }
+
         .inputN {
 
+            border: none;
+            outline: none;
             width: 80%;
             max-width: 700px;
+            font-family: $title-font;
+            color: #a3a3a3;
+            margin-top: 10px;
+            font-size: large;
+            /* Firefox */
+            -moz-appearance: textfield;
+
+            /* Chrome */
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Opéra*/
+            &::-o-inner-spin-button {
+                -o-appearance: none;
+                margin: 0;
+            }
+
+
         }
 
         .labelN {
@@ -50,6 +93,7 @@
             width: 80%;
             height: 10%;
             font-family: $title-font;
+            font-size: large;
 
         }
 
@@ -60,7 +104,7 @@
             align-items: center;
             text-align: center;
             gap: 20px;
-            margin-top: 50px;
+            margin-top: 5%;
 
             .cal-begin-btn {
 
@@ -125,8 +169,8 @@
         .calfooter {
 
             height: 50%;
-            width: 100%;
-            margin-top: 5%;
+            width: 75%;
+            margin-top: 30px;
             font-size: 12px;
             font-family: $title-font;
         }
