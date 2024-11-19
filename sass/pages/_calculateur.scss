@@ -67,6 +67,7 @@
             color: #a3a3a3;
             margin-top: 10px;
             font-size: large;
+
             /* Firefox */
             -moz-appearance: textfield;
 
@@ -256,4 +257,26 @@
     }
 
 
+}
+
+@media screen and (max-width: 360px) {
+
+    .plants {
+
+        display: none;
+    }
+
+    .circles {
+
+        display: none;
+    }
+
+    .calcul {
+
+        max-width: 350px;
+        width: 350px;
+        max-height: 365px;
+        height: 150px;
+
+    }
 }
