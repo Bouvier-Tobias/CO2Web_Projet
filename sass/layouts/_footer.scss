@@ -2,6 +2,7 @@ footer {
   bottom: 0;
   position: absolute;
   width: 100%;
+  height: auto;
   border-top: 2.5px solid $greencolor2;
 
 
@@ -10,6 +11,8 @@ footer {
     justify-content: end;
     gap: 40px;
     padding: 30px 20px 30px 0;
+    overflow: hidden;
+
 
     .active {
       font-weight: 700;
@@ -29,16 +32,20 @@ footer {
   }
 
   @media screen and (max-width: 360px) {
+
+
     .footer-links {
-      width: 100%;
-      position: fixed;
-      top: 50%;
+      width: 330px;
       display: flex;
       flex-direction: column;
       margin-left: 20px;
       z-index: 0;
+      bottom: 0;
 
 
+      .links {
+        font-size: 1em;
+      }
 
 
       div {
