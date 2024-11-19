@@ -1,0 +1,139 @@
+#body-apropos{
+  min-height: 100vh;
+  min-width: 100vw;
+
+
+  
+
+#block1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(0%, 80%);
+
+  .slide{
+    transform: translate(-0%);
+  }
+  
+
+  .left-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(-40%);
+    
+    
+    .container-color{
+      left: 0;
+      width: 800px;
+      height: 300px;
+      border-radius: 0 140px 140px 0;
+      background: rgb(181,214,83);
+      background: linear-gradient(150deg, rgba(181,214,83,1) 0%, rgba(121,197,88,1) 32%, rgba(61,173,92,1) 74%);
+    }
+
+    #img-feuille{
+      position: absolute;
+      transform: translate(40px);
+      z-index: 1;
+      width: 700px;
+      
+    }
+
+    #img-pc{
+      transform: translate(40px, 90px);
+      position: absolute;
+      width: 470px;
+    }
+
+    
+  }
+  .right-container{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    transform: translateY(-40%);
+
+    .point_and_title{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 50px;
+
+      .point{
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: $greencolor4;
+      }
+
+      h1{
+        font-size: 3em;
+        font-family: $title-font;
+        font-weight: 600;
+        color: $blackcolor2;
+      }
+    }
+    p{
+      font-family: $primary-font;
+      color: $blackcolor2;
+      font-size: 1.2em;
+      font-weight: 400;
+      line-height: 40px;
+      padding-bottom: 25px;
+    }
+
+    #greencolor{
+      background: rgb(181,214,83);
+      background: linear-gradient(150deg, rgba(181,214,83,1) 0%, rgba(121,197,88,1) 32%, rgba(61,173,92,1) 74%);
+      width: 300px;
+      height: 3px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    h3{
+      font-family: $title-font;
+      font-weight: 500;
+      color: $blackcolor2;
+      font-size: 1.3em;
+      line-height: 40px;
+    }
+    }
+
+    #imgarrow{
+      width: 40px;
+      margin-right: 80px;
+      transform: translateY(-110px);
+      img{
+        width: 70px;
+      }
+
+    
+    }
+    #imgarrow:hover{
+      cursor: pointer;
+    }
+  }
+
+  #block2{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #left_arrow{
+      width: 70px;
+    }
+  }
+  
+  
+}
+
+
