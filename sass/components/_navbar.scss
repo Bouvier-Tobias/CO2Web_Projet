@@ -2,7 +2,9 @@
   z-index: 1;
   @include flex-start-row;
   gap: 50px;
-  padding: 15px 0px 15px 100px;
+  padding-top: 15px;
+  padding-left: 100px;
+  //padding: 15px 0px 15px 100px;
   border-bottom: 2.5px solid #80808046;
   background-color: $whitecolor;
 
@@ -211,15 +213,19 @@
 
 
   .navbar {
-    max-width: 320px;
+    max-width: 100%;
     //padding-left: 40px;
     z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
     .box {
       display: block;
       position: absolute;
       left: 75%;
+      top: 0.2%;
       z-index: 999;
     }
 
@@ -271,8 +277,11 @@
 
     }
 
-    .img-nav {
-      justify-content: left;
+    .co2web {
+      position: absolute;
+      left: 5%;
+      top: 2%;
+      z-index: 1000;
     }
   }
 
