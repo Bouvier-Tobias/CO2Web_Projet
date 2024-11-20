@@ -9,11 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translate(0%, 80%);
+  transform: translate(0, 80%);
 
-  .slide{
-    transform: translate(-0%);
-  }
   
 
   .left-container{
@@ -109,6 +106,7 @@
       width: 40px;
       margin-right: 80px;
       transform: translateY(-110px);
+      
       img{
         width: 70px;
       }
