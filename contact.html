@@ -1,64 +1,83 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactez-nous | CO2WEB</title>
-    <link rel="stylesheet" href="sass/style.css">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="./sass/style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <img class="img-nav" src="./logo/CO2-logo.svg" alt="Logo CO2WEB">
-
             <div class="nav-links">
-                <a class="links " href="index.html">Accueil</a>
-                <a class="links " href="emploi.html">Mode d'emploi</a>
-                <a class="links " href="velib.html">Trouver un velib</a>
-                <a class="links " href="calculateur.html">Calculateur</a>
-                <a class="links " href="apropos.html">A propos</a>
+                <a class="links" href="index.html">Accueil</a>
+                <a class="links" href="emploi.html">Mode d'emploi</a>
+                <a class="links" href="velib.html">Trouver un velib</a>
+                <a class="links" href="calculateur.html">Calculateur</a>
+                <a class="links" href="apropos.html">À propos</a>
                 <a class="links active" href="contact.html">Contact</a>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="contact">
-            <h1>Contactez-nous</h1>
-            <div class="contact-form">
-                <div class="form-group">
-                    <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" placeholder="Prénom">
+
+    <main class="contact">
+        <h1>Contactez-nous</h1>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Votre email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Numéro" required>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" placeholder="Nom">
-                </div>
-                <div class="form-group">
-                    <label for="email">Votre email</label>
-                    <input type="email" id="email" placeholder="votre@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="telephone">Téléphone</label>
-                    <input type="tel" id="telephone" placeholder="Numéro">
-                </div>
-                <div class="form-group full-width">
                     <label for="message">Votre message</label>
-                    <textarea id="message" placeholder="Message"></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
                 </div>
-                <button type="submit" class="submit-button">Commencer</button>
-            </div>
+                <button type="submit" class="btn-submit">Commencer</button>
+            </form>
+        </div>
+
+        <!-- Plantes décoratives -->
+        <section class="plants">
+            <div class="plant1"><img src="./co2WEB/co2 WEB/Groupe27.svg" alt="Plante décorative 1"></div>
+            <div class="plant2"><img src="./co2WEB/co2 WEB/TracÔÇÜ76.svg" alt="Plante décorative 2"></div>
+            <div class="plant3"><img src="./co2WEB/co2 WEB/TracÔÇÜ69.svg" alt="Plante décorative 3"></div>
+        </section>
+
+        <!-- Cercles décoratifs -->
+        <section class="circles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
         </section>
     </main>
+
     <footer>
         <div class="footer-links">
             <a class="links" href="index.html">Accueil</a>
-            <a class="links active" href="emploi.html">Mode d'emploi</a>
+            <a class="links" href="emploi.html">Mode d'emploi</a>
             <a class="links" href="velib.html">Trouver un velib</a>
             <a class="links" href="calculateur.html">Calculateur</a>
-            <a class="links" href="apropos.html">A propos</a>
-            <a class="links" href="contact.html">Contact</a>
+            <a class="links" href="apropos.html">À propos</a>
+            <a class="links active" href="contact.html">Contact</a>
         </div>
     </footer>
 </body>
