@@ -148,6 +148,10 @@
     z-index: 999;
     border-bottom: none;
 
+    .co2web{
+      z-index: 1000;
+    }
+
 
     .box {
       display: block;
@@ -168,7 +172,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      z-index: 20;
+      z-index: 1;
       background-color: #fff;
       margin-left: 100%;
       // display: none;
@@ -187,6 +191,7 @@
         font-family: $title-font;
         font-weight: 500
       }
+
     }
 
     .mobile-menu {
@@ -203,6 +208,7 @@
 
 
     }
+    
   }
 
 

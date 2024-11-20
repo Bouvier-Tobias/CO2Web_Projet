@@ -117,4 +117,131 @@ main{
     max-height: auto;
   }
 
+  
+    main{
+
+      section{
+        display: flex;
+        max-width: 100%;
+
+        .index-img{
+          width: 40%;
+          margin-top: -150px;
+        }
+
+        .index-container{
+          display: flex;
+          justify-content: center;
+          
+          .title_index{
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 768px){
+  .index.body{
+    max-width: 768px;
+    max-height: 1024px;
+  }
+
+  
+    main{
+      max-height: 100%;
+      section{
+        display: flex;
+        max-width: 100%;
+
+        .index-img{
+          width: 100%;
+          margin-top: -200px;
+        }
+
+        .index-container{
+          margin-left: 40px;
+          display: flex;
+          justify-content: center;
+          
+          .title_index{
+            padding-top: 30px;
+            font-size: 2em;
+          }
+
+          .index-p{
+            font-size: 1.2em;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 360px){
+  .index.body{
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  
+    main{
+      max-width: 360px;
+      max-height: 100vh;
+
+
+      section{
+        display: flex;
+        justify-content: center;
+        max-width: 360px;
+        max-height: 800px;
+
+        .index-img{
+          width: 60%;
+          position: absolute;
+          padding: 0;
+          right: -7px;
+          top: 280px;
+        }
+
+        .index-container{
+          margin-top: 220px;
+          margin-left: 0px;
+          display: flex;
+          justify-content: start;
+          
+          .title_index{
+            padding-top: 30px;
+            font-size: 1.5em;
+          }
+
+          .index-p{
+            margin-top: 10px;
+            width: 300px;
+            font-size: 0.9em;
+            line-height: 20px;
+          }
+
+          .index-btn{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 0;
+            padding-top: 0px;
+            margin-top: 15px;
+            width: 100%;
+
+            .index-begin-btn{
+              width: 100%;
+              font-size: 1em;
+            }
+
+            .index-second-btn{
+              width: 100%;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
 }
