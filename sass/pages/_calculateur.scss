@@ -1,5 +1,11 @@
 .cal {
 
+
+    .title-calmob {
+
+        display: none;
+    }
+
     .title-cal {
 
         display: flex;
@@ -8,10 +14,12 @@
         font-family: $title-font;
         font-weight: 500;
         font-size: xx-large;
-        flex-direction: column;
-        align-items: center;
         padding: 10vh;
 
+    }
+
+    .title-cal2 {
+        display: none;
     }
 
     .calcul {
@@ -34,6 +42,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        .labelmobile {
+            display: none;
+        }
 
         .underline {
 
@@ -256,27 +268,197 @@
 
     }
 
+    @media screen and (min-width: 1366px) and (max-width: 1500px) {
 
-}
+        .plants {
 
-@media screen and (max-width: 360px) {
+            display: none;
+        }
 
-    .plants {
+        .circles {
 
-        display: none;
+            display: none;
+        }
+
+        .title-cal {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: $title-font;
+            font-weight: 500;
+            font-size: xx-large;
+            padding: 5vh;
+
+
+        }
+
+        .calcul {
+
+
+            .labelN {
+
+                margin-top: 1%;
+                display: flex;
+                align-items: left;
+                width: 80%;
+                height: 10%;
+                font-family: $title-font;
+                font-size: large;
+            }
+
+            .underline {
+
+                margin-bottom: 15px;
+            }
+
+            .underline2 {
+
+                margin-bottom: 30px;
+            }
+
+
+        }
+
     }
 
-    .circles {
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
 
-        display: none;
+        .plants {
+
+            display: none;
+        }
+
+        .circles {
+
+            display: none;
+        }
+
+        .title-cal {
+
+            margin: 1%;
+        }
+
+        .calcul {
+
+            max-width: 700px;
+            width: 700px;
+            max-height: 850px;
+            height: 320px;
+
+
+            .labelN {
+
+                margin-top: 1vh;
+                display: flex;
+                align-items: left;
+                width: 80%;
+                height: 5%;
+                font-family: $title-font;
+                font-size: large;
+
+            }
+
+        }
+
+        .underline {
+
+            margin-bottom: 2vh;
+        }
+
+        .underline2 {
+
+            margin-bottom: 4vh;
+        }
+
+        .calfooter {
+
+            width: 90%;
+            font-size: 0.5em;
+            color: #777777;
+            padding: -15%;
+            margin-bottom: 5%;
+        }
+
     }
 
-    .calcul {
+    @media screen and (min-width: 360px) and (max-width:700px) {
 
-        max-width: 350px;
-        width: 350px;
-        max-height: 365px;
-        height: 150px;
+        .plants {
 
+            display: none;
+        }
+
+        .circles {
+
+            display: none;
+        }
+
+        .calcul {
+
+            max-width: 300px;
+            width: 300px;
+            max-height: 600px;
+            height: 350px;
+
+            .inputN {
+                padding: -100vh;
+                font-size: smaller;
+            }
+
+            .labelmobile {
+                z-index: 1;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+            }
+
+        }
+
+        .calculator {
+
+            .title-cal {
+                display: none;
+            }
+
+            .title-calmob {
+
+                margin-left: 2vh;
+                padding-top: 8vh;
+                display: flex;
+                font-family: $title-font;
+                font-weight: 600;
+                font-size: 4vh;
+                align-items: end;
+
+            }
+
+            .calfooter {
+
+                width: 70%;
+                font-size: 0.6em;
+                color: #777777;
+                padding: 1%;
+
+            }
+
+            .underline {
+
+                margin-bottom: -10px;
+            }
+
+            .underline2 {
+
+                margin-bottom: -10px;
+            }
+
+            .labelN {
+                display: none;
+                z-index: 0;
+            }
+
+        }
     }
+
 }
