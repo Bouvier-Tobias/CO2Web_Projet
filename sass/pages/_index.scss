@@ -125,16 +125,22 @@ main{
         max-width: 100%;
 
         .index-img{
-          width: 40%;
-          margin-top: -150px;
+          width: 90%;
+          margin-top: -220px;
         }
 
         .index-container{
           display: flex;
           justify-content: center;
+          padding-top: 50px;
           
           .title_index{
+            font-size: 2.4em;
             padding-top: 30px;
+          }
+
+          .index-p{
+            font-size: 1.4em;
           }
         }
       }
@@ -156,13 +162,14 @@ main{
 
         .index-img{
           width: 100%;
-          margin-top: -200px;
+          margin-top: -240px;
         }
 
         .index-container{
           margin-left: 40px;
           display: flex;
           justify-content: center;
+          padding-top: 10px;
           
           .title_index{
             padding-top: 30px;
@@ -200,8 +207,8 @@ main{
           width: 60%;
           position: absolute;
           padding: 0;
-          right: -7px;
-          top: 280px;
+          right: 0px;
+          top:315px;
         }
 
         .index-container{
@@ -234,11 +241,13 @@ main{
             .index-begin-btn{
               width: 100%;
               font-size: 1em;
+              width: 300px;
             }
 
             .index-second-btn{
               width: 100%;
               font-size: 1em;
+              width: 300px;
             }
           }
         }
