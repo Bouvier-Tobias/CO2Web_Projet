@@ -33,17 +33,16 @@
     z-index: 2;
     display: none;
     background-color: #fff;
-    margin: 10px;
-    width: 60px;
-    height: 60px;
+    margin: 34px;
+    height: 34px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     position: relative;
 
     .container-lignes {
-      width: 35px;
-      height: 35px;
+      width: 29px;
+      height: 27px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -53,8 +52,8 @@
         background-color: $greencolor3;
         position: absolute;
         border-radius: 10px;
-        width: 35px;
-        height: 6px;
+        width: 28px;
+        height: 5px;
       }
     }
   }
@@ -64,11 +63,11 @@
   }
 
   .box .ligne:nth-child(2) {
-    top: 14px;
+    top: 10px;
   }
 
   .box .ligne:nth-child(3) {
-    top: 28px;
+    top: 20px;
   }
 
   //animation button
@@ -157,6 +156,7 @@
       display: block;
       position: absolute;
       left: 85%;
+      top: -15px;
       z-index: 999;
     }
 
@@ -231,7 +231,7 @@
       display: block;
       position: absolute;
       left: 75%;
-      top: 0.2%;
+      top: -11px;
       z-index: 999;
     }
 
@@ -284,6 +284,7 @@
     }
 
     .co2web {
+      width: 150px;
       position: absolute;
       left: 5%;
       top: 2%;
