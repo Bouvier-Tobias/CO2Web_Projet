@@ -35,6 +35,7 @@
                     <div class="form-group">
                         <label for="nom">Nom</label>
                         <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                        <div class="underline_"></div>
                     </div>
                 </div>
                 <div class="form-row">
@@ -51,7 +52,10 @@
                     <label for="message">Votre message</label>
                     <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
                 </div>
-                <button type="submit" class="btn-submit">Commencer</button>
+                <div class="btn">
+
+                    <button type="submit" class="btn-submit">Commencer</button>
+                </div>
             </form>
         </div>
 
@@ -72,12 +76,18 @@
 
     <footer>
         <div class="footer-links">
-            <a class="links" href="index.html">Accueil</a>
-            <a class="links" href="emploi.html">Mode d'emploi</a>
-            <a class="links" href="velib.html">Trouver un velib</a>
-            <a class="links" href="calculateur.html">Calculateur</a>
-            <a class="links" href="apropos.html">À propos</a>
-            <a class="links active" href="contact.html">Contact</a>
+            <div>
+                <a class="links" href="index.html">Accueil</a>
+                <a class="links" href="emploi.html">Mode d'emploi</a>
+            </div>
+            <div>
+                <a class="links active" href="velib.html">Trouver un velib</a>
+                <a class="links" href="calculateur.html">Calculateur</a>
+            </div>
+            <div>
+                <a class="links" href="apropos.html">A propos</a>
+                <a class="links" href="contact.html">Contact</a>
+            </div>
         </div>
     </footer>
 </body>
