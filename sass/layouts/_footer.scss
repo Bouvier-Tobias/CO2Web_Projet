@@ -67,4 +67,39 @@ footer {
 
   }
 
+  @media screen and (min-width: 1366px) and (max-width: 1500px) {
+
+
+    .footer-links {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+      z-index: 0;
+      bottom: 0;
+      padding-right: 0px;
+      gap: 15px;
+
+
+      .links {
+        font-size: 1em;
+      }
+
+
+      div {
+        display: flex;
+        gap: 20px;
+      }
+
+      .footers-menu {
+        opacity: 0;
+        display: none;
+      }
+
+    }
+
+
+
+  }
+
 }

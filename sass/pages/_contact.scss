@@ -37,9 +37,7 @@
                 justify-content: center;
                 align-items: center;
 
-                @media (max-width: 768px) {
-                    flex-direction: column;
-                }
+
 
                 .form-group {
                     flex: 1;
@@ -200,6 +198,51 @@
             z-index: 1;
         }
     }
-}
 
-@media screen and (min-width 1366px) and (max-width 1500px) {}
+    @media screen and (min-width: 1366px) and (max-width: 1500px) {
+
+        padding: 30px 0 0 0;
+        height: 20vh;
+
+        .contact-form {
+            height: 2000vh;
+        }
+
+
+        .circles {
+            display: none;
+        }
+
+
+
+
+        .plants {
+
+            .plant1 {
+                position: absolute;
+                top: -5%;
+                left: -15vh;
+                transform: scale(0.5);
+                z-index: -10;
+            }
+
+            .plant2 {
+                position: absolute;
+                top: 50%;
+                left: -8vh;
+                transform: scale(0.5);
+                z-index: -10;
+            }
+
+            .plant3 {
+                position: absolute;
+                bottom: 18%;
+                right: -1%;
+                transform: scale(1) rotate(15deg);
+                z-index: -10;
+            }
+        }
+
+
+    }
+}
