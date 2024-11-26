@@ -243,4 +243,209 @@
             z-index: 1;
         }
     }
+
+
+    @media screen and (min-width: 1366px) and (max-width: 1400px) {
+
+        padding: 30px 0 0 0;
+        height: 0;
+
+        .contact-form {
+            height: 200vh;
+            padding-bottom: 30px;
+
+
+            .btn-tel {
+                display: none;
+            }
+        }
+
+
+        .circles {
+
+
+            .circle1 {
+
+                transform: scale(0.5);
+                top: 11vh;
+                right: 14vh;
+
+
+            }
+
+            .circle2 {
+
+                transform: scale(0.6);
+                top: 10vh;
+                right: 7vh;
+            }
+
+            .circle3 {
+
+                transform: scale(0.6);
+                top: 21.5vh;
+                right: 9vh;
+            }
+
+
+
+        }
+
+
+
+        .plants {
+
+            .plant1 {
+                position: absolute;
+                top: -5%;
+                left: -15vh;
+                transform: scale(0.5);
+                z-index: -10;
+            }
+
+            .plant2 {
+                position: absolute;
+                top: 50%;
+                left: -8vh;
+                transform: scale(0.5);
+                z-index: -10;
+            }
+
+            .plant3 {
+                position: absolute;
+                bottom: 18%;
+                right: 0%;
+                transform: scale(0.8) rotate(15deg);
+                z-index: -10;
+            }
+        }
+
+
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+
+    .contact {
+
+        .contact-form {
+            max-width: 400px;
+
+
+            .btn-tel {
+                display: none;
+            }
+        }
+    }
+
+    .plants {
+        display: none;
+    }
+
+    .circles {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+
+    .contact {
+
+        height: 350px;
+        padding: 50px 100px 100px 25px;
+
+        .contact-form {
+            max-width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 330px;
+
+            form {
+                .form-info {
+                    display: flex;
+                    flex-direction: column-reverse;
+
+
+                    .form-row {
+                        max-width: 500px;
+                    }
+
+                    .form-row1 {
+                        max-width: 800px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1em;
+                        align-items: start;
+
+                        input {
+                            width: 200px;
+                        }
+                    }
+                }
+
+                .btn {
+                    display: none;
+                }
+
+                .btn-tel {
+                    width: 100%;
+                    @include flex-center;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    gap: 15px;
+                    margin-top: 3%;
+
+                    .btn_tel {
+
+
+                        background: rgb(181, 214, 83);
+                        background: linear-gradient(150deg, rgba(181, 214, 83, 1) 0%, rgba(121, 197, 88, 1) 32%, rgba(61, 173, 92, 1) 74%);
+                        color: $whitecolor;
+                        font-size: 1.2em;
+                        font-family: $title-font;
+                        font-weight: 500;
+                        width: 150px;
+                        height: 50px;
+                        border: none;
+                        border-radius: 100px;
+                        box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.315);
+
+                        .btn_tel:hover {
+                            transition: 0.5s ease-in-out;
+                            cursor: pointer;
+                            background: $greencolor1;
+                        }
+
+                    }
+
+
+
+                }
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            display: flex;
+            align-items: start;
+        }
+
+    }
+
+    .plants {
+        display: none;
+    }
+
+    .circles {
+        display: none;
+    }
+
+
+
 }
