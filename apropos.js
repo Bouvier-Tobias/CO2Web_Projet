@@ -1,5 +1,5 @@
 const rightArrow = document.querySelector('#imgarrow');
-const slide = document.querySelector('main');
+const slide = document.querySelector('.slider');
 const leftArrow = document.querySelector('#leftarrow');
 
 rightArrow.addEventListener('click', ()=>{

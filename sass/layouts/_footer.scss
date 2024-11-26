@@ -4,8 +4,7 @@ footer {
   width: 100%;
   height: auto;
   border-top: 2.5px solid $greencolor2;
-
-
+  background-color: white;
 
   .footer-links {
     display: flex;
@@ -13,7 +12,6 @@ footer {
     gap: 40px;
     padding: 30px 20px 30px 0;
     overflow: hidden;
-
 
     .active {
       font-weight: 700;
@@ -32,9 +30,34 @@ footer {
     }
   }
 
+  @media screen and (min-width: 1366px) and (max-width: 1500px) {
+    .footer-links {
+      width: 1366px;
+      display: flex;
+      flex-direction: row;
+      margin-left: 0;
+      z-index: 0;
+      bottom: 0;
+      padding-right: 50px;
+      gap: 15px;
+
+      .links {
+        font-size: 1em;
+      }
+
+      div {
+        display: flex;
+        gap: 20px;
+      }
+
+      .footers-menu {
+        opacity: 0;
+        display: none;
+      }
+    }
+  }
+
   @media screen and (max-width: 360px) {
-
-
     .footer-links {
       width: 330px;
       display: flex;
@@ -45,11 +68,9 @@ footer {
       padding-right: 0px;
       gap: 15px;
 
-
       .links {
         font-size: 1em;
       }
-
 
       div {
         display: flex;
@@ -60,46 +81,6 @@ footer {
         opacity: 0;
         display: none;
       }
-
     }
-
-
-
   }
-
-  @media screen and (min-width: 1366px) and (max-width: 1500px) {
-
-
-    .footer-links {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      margin-left: 20px;
-      z-index: 0;
-      bottom: 0;
-      padding-right: 0px;
-      gap: 15px;
-
-
-      .links {
-        font-size: 1em;
-      }
-
-
-      div {
-        display: flex;
-        gap: 20px;
-      }
-
-      .footers-menu {
-        opacity: 0;
-        display: none;
-      }
-
-    }
-
-
-
-  }
-
 }
