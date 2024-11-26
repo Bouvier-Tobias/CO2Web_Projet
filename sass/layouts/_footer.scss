@@ -57,13 +57,11 @@ footer {
     }
   }
 
-  @media screen and (min-width: 1366px) and (max-width: 1500px) {
-
-
+  @media screen and (max-width: 360px) {
     .footer-links {
-      width: 100%;
+      width: 330px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       margin-left: 20px;
       z-index: 0;
       bottom: 0;
