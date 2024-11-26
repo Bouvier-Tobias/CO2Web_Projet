@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <img class="img-nav" src="./logo/CO2-logo.svg" alt="Logo CO2WEB">
+            <img class="img-nav co2web" src="./logo/CO2-logo.svg" alt="Logo CO2WEB">
             <div class="nav-links">
                 <a class="links" href="index.html">Accueil</a>
                 <a class="links" href="emploi.html">Mode d'emploi</a>
@@ -20,6 +20,13 @@
                 <a class="links" href="apropos.html">À propos</a>
                 <a class="links active" href="contact.html">Contact</a>
             </div>
+            <button class="box b1">
+                <div class="container-lignes">
+                  <div class="ligne"></div>
+                  <div class="ligne"></div>
+                  <div class="ligne"></div>
+                </div>
+              </button>
         </nav>
     </header>
 
@@ -27,6 +34,7 @@
         <h1>Contactez-nous</h1>
         <div class="contact-form">
             <form action="#" method="post">
+                <div class="form-info">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="prenom">Prénom</label>
@@ -38,7 +46,7 @@
                         <div class="underline_"></div>
                     </div>
                 </div>
-                <div class="form-row">
+                <div class="form-row1">
                     <div class="form-group">
                         <label for="email">Votre email</label>
                         <input type="email" id="email" name="email" placeholder="votre@email.com" required>
@@ -48,6 +56,8 @@
                         <input type="tel" id="telephone" name="telephone" placeholder="Numéro" required>
                     </div>
                 </div>
+           
+            </div>
                 <div class="form-group">
                     <label for="message">Votre message</label>
                     <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
@@ -55,6 +65,10 @@
                 <div class="btn">
 
                     <button type="submit" class="btn-submit">Commencer</button>
+                    
+                </div>
+                <div class="btn-tel">
+                    <button type="submit" class="btn_tel">Envoyer</button>
                 </div>
             </form>
         </div>
@@ -81,15 +95,16 @@
                 <a class="links" href="emploi.html">Mode d'emploi</a>
             </div>
             <div>
-                <a class="links active" href="velib.html">Trouver un velib</a>
+                <a class="links" href="velib.html">Trouver un velib</a>
                 <a class="links" href="calculateur.html">Calculateur</a>
             </div>
             <div>
                 <a class="links" href="apropos.html">A propos</a>
-                <a class="links" href="contact.html">Contact</a>
+                <a class="links active" href="contact.html">Contact</a>
             </div>
         </div>
     </footer>
+    <script src="./navbar.js"></script>
 </body>
 
 </html>

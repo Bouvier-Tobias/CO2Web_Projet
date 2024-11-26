@@ -1,210 +1,212 @@
 #body-apropos {
+  overflow: hidden;
   height: 100vh;
-  width: 200vw;
   padding: 0;
   margin: 0;
-  overflow: hidden;
-
 
   #main-apropos {
-    width: 200vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease-out;
-
   }
 
-  #block1 {
-    width: 100vw;
-    height: 100vh;
+  .slider {
     display: flex;
-    align-items: center;
+    width: 200vw;
+    transition: 0.4s ease-in;
 
-
-
-    .left-1-container {
+    #block1 {
+      width: 100vw;
+      height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      transform: translateY(-100px);
 
+      .left-1-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateY(-100px);
 
+        .container-color {
+          left: 0;
+          width: 800px;
+          height: 300px;
+          border-radius: 0 140px 140px 0;
+          background: rgb(181, 214, 83);
+          background: linear-gradient(
+            150deg,
+            rgba(181, 214, 83, 1) 0%,
+            rgba(121, 197, 88, 1) 32%,
+            rgba(61, 173, 92, 1) 74%
+          );
+        }
 
-      .container-color {
-        left: 0;
-        width: 800px;
-        height: 300px;
-        border-radius: 0 140px 140px 0;
-        background: rgb(181, 214, 83);
-        background: linear-gradient(150deg, rgba(181, 214, 83, 1) 0%, rgba(121, 197, 88, 1) 32%, rgba(61, 173, 92, 1) 74%);
+        #img-feuille {
+          position: absolute;
+          transform: translate(40px);
+          z-index: 1;
+          width: 700px;
+        }
+
+        #img-pc {
+          transform: translate(40px, 90px);
+          position: absolute;
+          width: 470px;
+        }
       }
 
-      #img-feuille {
-        position: absolute;
-        transform: translate(40px);
-        z-index: 1;
+      .right-1-container {
         width: 700px;
-
-      }
-
-      #img-pc {
-        transform: translate(40px, 90px);
-        position: absolute;
-        width: 470px;
-      }
-
-
-    }
-
-    .right-1-container {
-      width: 700px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: start;
-      transform: translateY(-40%);
-
-      .point_and_title {
         display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 20px;
-        padding-bottom: 50px;
-
-        .point {
-          width: 20px;
-          height: 20px;
-          border-radius: 20px;
-          background-color: $greencolor4;
-        }
-
-        h1 {
-          font-size: 3em;
-          font-family: $title-font;
-          font-weight: 600;
-          color: $blackcolor2;
-        }
-      }
-
-      p {
-        font-family: $primary-font;
-        color: $blackcolor2;
-        font-size: 1.2em;
-        font-weight: 400;
-        line-height: 40px;
-        padding-bottom: 25px;
-      }
-
-      #greencolor {
-        background: rgb(181, 214, 83);
-        background: linear-gradient(150deg, rgba(181, 214, 83, 1) 0%, rgba(121, 197, 88, 1) 32%, rgba(61, 173, 92, 1) 74%);
-        width: 300px;
-        height: 3px;
-        border-radius: 10px;
-        margin-bottom: 25px;
-      }
-
-      h3 {
-        font-family: $title-font;
-        font-weight: 500;
-        color: $blackcolor2;
-        font-size: 1.3em;
-        line-height: 40px;
-      }
-    }
-
-    #imgarrow {
-      width: 40px;
-      margin-right: 80px;
-      transform: translateY(-110px);
-
-      img {
-        width: 70px;
-      }
-
-
-    }
-
-    #imgarrow:hover {
-      cursor: pointer;
-    }
-  }
-
-  #block2 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    .left-2-container {
-      width: 800px;
-      transform: translate(250px, -200px);
-
-      .sous-conatain-left-2 {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: start;
-        align-items: center;
-        gap: 20px;
+        transform: translateY(-40%);
 
-        #leftarrow {
-          width: 40px;
-          transform: translateX(-150px);
+        .point_and_title {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          gap: 20px;
+          padding-bottom: 50px;
+
+          .point {
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: $greencolor4;
+          }
+
+          h1 {
+            font-size: 3em;
+            font-family: $title-font;
+            font-weight: 600;
+            color: $blackcolor2;
+          }
+        }
+
+        p {
+          font-family: $primary-font;
+          color: $blackcolor2;
+          font-size: 1.2em;
+          font-weight: 400;
+          line-height: 40px;
+          padding-bottom: 25px;
+        }
+
+        #greencolor {
+          background: rgb(181, 214, 83);
+          background: linear-gradient(
+            150deg,
+            rgba(181, 214, 83, 1) 0%,
+            rgba(121, 197, 88, 1) 32%,
+            rgba(61, 173, 92, 1) 74%
+          );
+          width: 300px;
+          height: 3px;
+          border-radius: 10px;
+          margin-bottom: 25px;
+        }
+
+        h3 {
+          font-family: $title-font;
+          font-weight: 500;
+          color: $blackcolor2;
+          font-size: 1.3em;
+          line-height: 40px;
+        }
+      }
+
+      #imgarrow {
+        width: 40px;
+        margin-right: 80px;
+        transform: translateY(-110px);
+
+        img {
+          width: 70px;
+        }
+      }
+
+      #imgarrow:hover {
+        cursor: pointer;
+      }
+    }
+
+    #block2 {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .left-2-container {
+        width: 800px;
+        transform: translate(250px, -200px);
+
+        .sous-container-left-2 {
+          display: flex;
+          flex-direction: row;
+          align-items: start;
+          align-items: center;
+          gap: 20px;
+
+          #leftarrow {
+            width: 40px;
+            transform: translateX(-150px);
+
+            #leftarrow:hover {
+              cursor: pointer;
+            }
+
+            img {
+              width: 70px;
+            }
+          }
 
           #leftarrow:hover {
             cursor: pointer;
           }
 
-          img {
-            width: 70px;
-          }
-        }
-
-        #leftarrow:hover {
-          cursor: pointer;
-        }
-
-        .title-and-para {
-          display: flex;
-          flex-direction: column;
-
-          .point-and-title2 {
+          .title-and-para {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
+            flex-direction: column;
 
-            h2 {
-              font-size: 3em;
-              padding-bottom: 40px;
-              font-family: $title-font;
-              font-weight: 600;
+            .point-and-title2 {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 20px;
+
+              h2 {
+                font-size: 3em;
+                padding-bottom: 40px;
+                font-family: $title-font;
+                font-weight: 600;
+                color: $blackcolor2;
+              }
+
+              .point2 {
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+                background-color: $greencolor4;
+                margin-bottom: 40px;
+              }
+            }
+            #block2-p2 {
+              display: none;
+            }
+            #greencolor2 {
+              display: none;
+            }
+            #block2-p {
+              font-size: 1.5em;
+              line-height: 50px;
+              font-family: $primary-font;
               color: $blackcolor2;
+              font-weight: 400;
             }
-
-            .point2 {
-              width: 20px;
-              height: 20px;
-              border-radius: 20px;
-              background-color: $greencolor4;
-              margin-bottom: 40px;
-            }
-          }
-
-          p {
-            font-size: 1.5em;
-            line-height: 50px;
-            font-family: $primary-font;
-            color: $blackcolor2;
-            font-weight: 400;
           }
         }
-
-
-
       }
     }
 
@@ -215,9 +217,125 @@
 
       #img-block2 {
         width: 100%;
-
       }
     }
   }
+}
+// Notenook 1366px adaptable j'usqua tabelette 768px //
+@media screen and (max-width: 1366px) and (min-width: 769px) {
+  #body-apropos {
+    width: 100%;
+    overflow: hidden;
+    #main-apropos {
+      .slider {
+        width: 200vw;
+        transition: 0.4s ease-in;
 
+        #block1 {
+          width: 100vw;
+
+          .left-1-container {
+            width: 50%;
+            transform: translate(-40px, -100px);
+
+            .container-color {
+              width: 90%;
+              height: 230px;
+            }
+
+            #img-feuille {
+              width: 80%;
+              transform: translate(10px);
+            }
+
+            #img-pc {
+              width: 60%;
+              transform: translate(0px, 60px);
+            }
+          }
+
+          .right-1-container {
+            width: 50%;
+
+            .point_and_title {
+              padding-bottom: 5%;
+              .point {
+                width: 15px;
+                height: 15px;
+              }
+
+              h1 {
+                font-size: 200%;
+              }
+            }
+
+            p {
+              font-size: 100%;
+              line-height: 200%;
+            }
+          }
+        }
+
+        #block2 {
+          width: 100vw;
+
+          .left-2-container {
+            width: 80%;
+            transform: translate(170px, -80px);
+
+            .sous-container-left-2 {
+              width: 100%;
+
+              #leftarrow {
+                transform: translate(-100px);
+              }
+
+              .title-and-para {
+                .point-and-title2 {
+                  .point2 {
+                    width: 15px;
+                    height: 15px;
+                  }
+                  h2 {
+                    font-size: 200%;
+                  }
+                }
+
+                p {
+                  font-size: 120%;
+                  line-height: 200%;
+                  width: 70%;
+                }
+              }
+            }
+          }
+
+          .right-2-container {
+            width: 70%;
+            height: 70%;
+            transform: translate(0, -100px);
+            #img-block2 {
+              transform: translate(0, 20px);
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablette 768px adaptable j'usqua mobile 361px //
+@media screen and (max-width: 768px) and (min-width: 361px) {
+  #body-apropos {
+    width: 100%;
+  }
+}
+
+// mobile et moin //
+@media screen and (max-width: 360px) and (min-width: 200px) {
+  #body-apropos {
+    width: 100%;
+  }
 }
