@@ -330,9 +330,126 @@
 @media screen and (max-width: 768px) and (min-width: 361px) {
   #body-apropos {
     width: 100%;
+    overflow: hidden;
 
     .slider {
       width: 200vw;
+
+      #block1 {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+        .left-1-container {
+          width: 90%;
+          height: 50px;
+          transform: translate(-150px, 100px);
+
+          .container-color {
+            width: 70%;
+            height: 180px;
+            // transform: translate(-100px, 200px);
+          }
+
+          #img-feuille {
+            width: 50%;
+            transform: translate(20px);
+            z-index: 0;
+          }
+
+          #img-pc {
+            width: 40%;
+            transform: translate(20px, 50px);
+          }
+        }
+
+        .right-1-container {
+          height: 10%;
+          transform: translate(0);
+          margin-left: 20px;
+
+          .point_and_title {
+            padding-bottom: 20px;
+            .point {
+              width: 15px;
+              height: 15px;
+            }
+            h1 {
+              font-size: 200%;
+            }
+          }
+
+          p {
+            font-size: 120%;
+          }
+
+          h3 {
+            font-size: 120%;
+          }
+
+          #imgarrow {
+            transform: translate(0);
+          }
+        }
+        #imgarrow {
+          transform: translate(240px, -870px);
+          cursor: pointer;
+          img {
+            width: 130%;
+          }
+        }
+      }
+
+      #block2 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .left-2-container {
+          width: 90%;
+          transform: translate(0px, -150px);
+
+          .sous-container-left-2 {
+            transform: translate(0);
+            width: 90%;
+
+            #leftarrow {
+              transform: translate(200px, -300px);
+              cursor: pointer;
+              z-index: 10;
+
+              #left-arrow {
+                width: 50px;
+              }
+            }
+
+            .title-and-para {
+              .point-and-title2 {
+                h2 {
+                  font-size: 190%;
+                }
+                .point2 {
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+              #block2-p {
+                font-size: 120%;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .right-2-container {
+          transform: translate(-10px, -200px);
+          z-index: -1;
+
+          #img-block2 {
+            width: 50%;
+          }
+        }
+      }
     }
   }
 }
