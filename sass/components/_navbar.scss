@@ -8,7 +8,6 @@
   border-bottom: 2.5px solid #80808046;
   background-color: $whitecolor;
 
-
   .img-nav {
     width: 150px;
     z-index: 5;
@@ -18,7 +17,6 @@
     @include flex-start-row;
     gap: 30px;
 
-
     .links {
       text-decoration: none;
       color: $greencolor1;
@@ -26,7 +24,6 @@
       font-size: large;
       @include flex-center-row-space-between;
     }
-
   }
 
   .box {
@@ -78,33 +75,25 @@
   .b1 .ligne:nth-child(1),
   .ligne:nth-child(3) {
     transform: rotate(0deg);
-    transition:
-      transform 0.15s ease-in-out,
-      top 0.15s 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out, top 0.15s 0.15s ease-in-out;
   }
 
   .b1.active .ligne:nth-child(1) {
     top: 14px;
     transform: rotate(45deg);
-    transition:
-      top 0.15s ease-in-out,
-      transform 0.15s 0.15s ease-in-out;
+    transition: top 0.15s ease-in-out, transform 0.15s 0.15s ease-in-out;
   }
 
   .b1.active .ligne:nth-child(2) {
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
-
   }
 
   .b1.active .ligne:nth-child(3) {
     top: 14px;
     transform: rotate(-45deg);
-    transition:
-      top 0.15s ease-in-out,
-      transform 0.15s 0.15s ease-in-out;
+    transition: top 0.15s ease-in-out, transform 0.15s 0.15s ease-in-out;
   }
-
 
   .active {
     font-weight: 700;
@@ -132,7 +121,6 @@
       width: 100%;
       gap: 2%;
     }
-
   }
 }
 
@@ -151,7 +139,6 @@
       z-index: 1000;
     }
 
-
     .box {
       display: block;
       position: absolute;
@@ -159,7 +146,6 @@
       top: -15px;
       z-index: 999;
     }
-
 
     .nav-links {
       top: 0;
@@ -178,8 +164,6 @@
       // display: none;
       transition: all 0.5s;
 
-
-
       .links {
         display: flex;
         margin: 20px 0;
@@ -189,13 +173,11 @@
         justify-content: center;
         padding-bottom: 10px;
         font-family: $title-font;
-        font-weight: 500
+        font-weight: 500;
       }
-
     }
 
     .mobile-menu {
-
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -205,19 +187,11 @@
       z-index: 998;
       border-bottom: green;
       overflow: hidden;
-
-
     }
-
   }
-
-
 }
 
 @media screen and (max-width: 360px) {
-
-
-
   .navbar {
     max-width: 100%;
     //padding-left: 40px;
@@ -225,7 +199,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding-left: 0px;
 
     .box {
       display: block;
@@ -234,7 +208,6 @@
       top: -11px;
       z-index: 999;
     }
-
 
     .nav-links {
       top: 0;
@@ -253,8 +226,6 @@
       // display: none;
       transition: all 0.5s;
 
-
-
       .links {
         display: flex;
         margin: 20px 0;
@@ -264,12 +235,11 @@
         justify-content: center;
         padding-bottom: 10px;
         font-family: $title-font;
-        font-weight: 500
+        font-weight: 500;
       }
     }
 
     .mobile-menu {
-
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -279,8 +249,6 @@
       z-index: 998;
       border-bottom: green;
       overflow: hidden;
-
-
     }
 
     .co2web {
@@ -291,5 +259,4 @@
       z-index: 1000;
     }
   }
-
 }
