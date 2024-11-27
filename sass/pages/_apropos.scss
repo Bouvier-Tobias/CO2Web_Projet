@@ -92,6 +92,10 @@
           padding-bottom: 25px;
         }
 
+        #content-block1 {
+          display: none;
+        }
+
         #greencolor {
           background: rgb(181, 214, 83);
           background: linear-gradient(
@@ -112,6 +116,10 @@
           color: $blackcolor2;
           font-size: 1.3em;
           line-height: 40px;
+        }
+
+        #content-h3-block1 {
+          display: none;
         }
       }
 
@@ -386,10 +394,6 @@
           h3 {
             font-size: 120%;
           }
-
-          #imgarrow {
-            transform: translate(0);
-          }
         }
         #imgarrow {
           transform: translate(240px, -870px);
@@ -458,5 +462,97 @@
 @media screen and (max-width: 360px) and (min-width: 200px) {
   #body-apropos {
     width: 100%;
+    overflow: hidden;
+
+    .slider {
+      width: 200vw;
+
+      #block1 {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+        .left-1-container {
+          width: 80%;
+          transform: translate(-50px, -20px);
+          .container-color {
+            width: 90%;
+            height: 150px;
+          }
+
+          #img-feuille {
+            width: 90%;
+            transform: translate(5px, -20px);
+          }
+
+          #img-pc {
+            width: 70%;
+            transform: translate(0, 30px);
+          }
+        }
+        .right-1-container {
+          width: 100%;
+          transform: translate(20px);
+          padding: 0;
+          margin: 0;
+          .point_and_title {
+            padding: 0;
+            margin: 0;
+            transform: translate(20px, -270px);
+            .point {
+              display: none;
+            }
+            h1 {
+              font-size: 180%;
+              margin-bottom: 0;
+              padding-top: 0;
+              width: 100%;
+            }
+          }
+
+          p {
+            display: none;
+          }
+
+          #content-block1 {
+            font-family: $title-font;
+            display: block;
+            font-size: 90%;
+            font-weight: 400;
+            line-height: 150%;
+            width: 90%;
+            text-align: start;
+            padding-bottom: 10px;
+          }
+          #greencolor {
+            width: 100px;
+            height: 2.3px;
+            margin-bottom: 10px;
+          }
+
+          h3 {
+            display: none;
+          }
+          #content-h3-block1 {
+            font-family: $title-font;
+            font-weight: 400;
+            font-size: 50%;
+            margin-bottom: 10px;
+
+            display: block;
+            font-size: 100%;
+          }
+        }
+
+        #imgarrow {
+          width: 10%;
+          height: 10%;
+          transform: translate(170px, -416px);
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
