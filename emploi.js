@@ -23,9 +23,6 @@ function nextSlide() {
     updateSlider();
 }
 
-const nextButton = document.getElementById('next');
-const prevButton = document.getElementById('prev');
-
 indicators.forEach((indicator, index) => {
     indicator.addEventListener('click', () => {
         currentIndex = index;
@@ -34,11 +31,7 @@ indicators.forEach((indicator, index) => {
 });
 
 document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowLeft') {
-        prevSlide();
-    } else if (event.key === 'ArrowRight') {
-        nextSlide();
-    }
+    updateSlide((currentIndex - 1 + totalSlides) % totalSlides)
 });
 
 updateSlider();

@@ -1,4 +1,4 @@
-body_emploi {
+.body_emploi {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Inclure les bordures et le padding dans le calcul de la largeur */
@@ -6,7 +6,7 @@ body_emploi {
 
 /* Style du titre */
 .titreMD {
-  padding: 1em;
+  padding: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   font-weight: 600;
@@ -20,6 +20,7 @@ body_emploi {
   overflow: hidden;
   margin: 0 auto; /* Centrer le carrousel horizontalement */
   display: block;
+  
 }
 
 
