@@ -75,7 +75,14 @@ footer {
 
       .copyright {
         display: block;
+
+        font-family: $title-font;
+        font-weight: 200;
         font-size: 0.7em;
+
+        h2 {
+          font-weight: 500;
+        }
       }
 
       .links {
