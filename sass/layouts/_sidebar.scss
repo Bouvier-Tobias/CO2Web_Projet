@@ -1,6 +1,12 @@
+body_emploi {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclure les bordures et le padding dans le calcul de la largeur */
+}
+
 /* Style du titre */
 .titreMD {
-  padding: 1.5em;
+  padding: 1em;
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   font-weight: 600;
@@ -26,7 +32,7 @@
 
 /* Diapositive du carrousel */
 .carousel-slide {
-  flex: 0 0 33.33%;
+  flex: 0 30%;
   text-align: center;
   padding: 2em; /* Réinitialiser le padding */
   margin: 0em; /* Réinitialiser les marges */
@@ -128,7 +134,11 @@ button#next {
               // Notebook
 
 @media screen and (min-width: 1366px) {
+
+  
+
   .titreMD {
+
     padding-bottom: 0em;
     padding-top: 1em;
     text-align: left;
@@ -137,9 +147,10 @@ button#next {
     margin-left: 6%;
   }
 
-.slide-button {
-  display: none;
-}
+  .slider__nav {
+
+    display: none;
+  }
 
   .carousel-indicators {
     display: none;
@@ -157,13 +168,17 @@ button#next {
   .pcver {
     display: block;
     padding-bottom: 3em;
-  }
+    transform: scale(0.8);
+    padding-bottom: 30px;
+   margin-bottom: 15px; 
 
+  }
   .pcmdp {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 5em;
+    padding-top: -10em;
+    z-index: 5;
   }
 
   .pcmdp1, .pcmdp2, .pcmdp3 {
@@ -234,8 +249,8 @@ button#next {
 
 .circle2 {
   position: absolute;
-  top: 9%;
-  left: 58%;
+  top: -7%;
+  left: 60%;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -244,18 +259,18 @@ button#next {
 
 .circle3 {
   position: absolute;
-  top: 22%;
-  left: 65%;
+  top: 10%;
+  left: 66%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color:  #B5D653;
+  z-index: -1;
 }
-
 .circle4 {
   position: absolute;
-  top: 29%;
-  left: 63%;
+  top: 16%;
+  left: 64%;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -264,8 +279,8 @@ button#next {
 
 .circle5 {
   position: absolute;
-  top: 66%;
-  left: 36%;
+  top: 80%;
+  left: 34%;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -274,7 +289,7 @@ button#next {
 
 .circle6 {
   position: absolute;
-  top: 77.5%;
+  top: 92%;
   left: 43%;
   width: 40px;
   height: 40px;
@@ -284,13 +299,12 @@ button#next {
 
 .circle7 {
   position: absolute;
-  top: 82%;
+  top: 97%;
   left: 40%;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color:  #019961;
-  z-index: 2;
 }
 
 .mainmdp {
@@ -300,99 +314,97 @@ button#next {
 
   }
 
-@media screen and (max-width: 1920px) {
 
+@media screen and (min-width: 1920px) {
 
-    .titreMD {
-      padding-bottom: 1em;
-      padding-top: 1em;
-      text-align: left;
-      width: 20%;
-      font-size: 35px;
-      margin-left: 10%;
-    
+                  .titreMD {
+                    padding-bottom: 1em;
+                    padding-top: 2em;
+                    text-align: left;
+                    width: 20%;
+                    font-size: 40px;
+                    margin-left: 6%;
+                  }
 
+                  .circles {
+                    padding-bottom: 10em;
+                  }
+                
+                .circle2 {
+                  position: absolute;
+                  top: -5%;
+                  left: 57%;
+                  width: 90px;
+                  height: 90px;
+                  border-radius: 50%;
+                  background-color:  #019961;
+                }
+                
+                .circle3 {
+                  position: absolute;
+                  top: 5%;
+                  left: 62%;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color:  #B5D653;
+                }
+                
+                .circle4 {
+                  position: absolute;
+                  top: 12%;
+                  left: 60.5%;
+                  width: 18px;
+                  height: 18px;
+                  border-radius: 50%;
+                  background-color:  #79C258;
+                }
+                
+                .circle5 {
+                  position: absolute;
+                  top: 61.7%;
+                  left: 38.5%;
+                  width: 90px;
+                  height: 90px;
+                  border-radius: 50%;
+                  background-color:  #B5D653;
+                }
+                
+                .circle6 {
+                  position: absolute;
+                  top: 71%;
+                  left: 44%;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color:  #79C258;
+                }
+                
+                .circle7 {
+                  position: absolute;
+                  top: 75%;
+                  left: 42%;
+                  width: 18px;
+                  height: 18px;
+                  border-radius: 50%;
+                  background-color:  #019961;
+                }
 
-    }
+                .pcver {
+                  padding-bottom: 0em;
+                  transform: scale(1);
+                }
 
-    .circles {
-      padding-bottom: 10em;
-    }
+                .pcmdp {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-evenly;
+                  padding-bottom: 2em;
+                }
+
+                .mainmdp {
+                  height: 50em;
+                  transform: translate(0%, 0%);
+              }
   
-  .circle2 {
-    position: absolute;
-    top: 15%;
-    left: 56%;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color:  #019961;
-  }
-  
-  .circle3 {
-    position: absolute;
-    top: 23%;
-    left: 62%;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color:  #B5D653;
-  }
-  
-  .circle4 {
-    position: absolute;
-    top: 30%;
-    left: 60%;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color:  #79C258;
-  }
-  
-  .circle5 {
-    position: absolute;
-    top: 59.5%;
-    left: 39.5%;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color:  #B5D653;
-  }
-  
-  .circle6 {
-    position: absolute;
-    top: 68%;
-    left: 45%;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color:  #79C258;
-  }
-  
-  .circle7 {
-    position: absolute;
-    top: 73%;
-    left: 43%;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color:  #019961;
-  }
-
-  .pcver {
-    padding-bottom: 0em;
-  }
-
-  .pcmdp {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 2em;
-  }
-
-  .mainmdp {
-    height: 50em;
-    transform: translate(0%, 0%);
-}
-
-    }  
+                  }
