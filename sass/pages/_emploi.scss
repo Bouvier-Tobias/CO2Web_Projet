@@ -29,6 +29,26 @@
     justify-content: center;
     position: relative;
 
+    .step_highlightedMobie {
+
+        display: none;
+      }
+
+    .step_highlighted {
+
+        background-color: $whitecolor;
+        padding: 30px;
+        width: 350px;
+        height: 400px;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+        text-align: center;
+        position: relative;
+        z-index: 4;
+        background-color: $whitecolor;
+        border: 2px solid $whitecolor;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);}
+
     .step {
       background-color: $whitecolor;
       padding: 30px;
@@ -42,14 +62,6 @@
 
       &:hover {
         transform: translateY(-10px);
-      }
-
-      &.highlighted {
-        position: relative;
-        z-index: 4;
-        background-color: $whitecolor;
-        border: 2px solid $whitecolor;
-        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
       }
 
       img {
@@ -84,8 +96,8 @@
   .circle-top-1 {
     width: 100px;
     height: 100px;
-    top: 29%;
-    right: 37%;
+    top: 35%;
+    right: 50%;
     background-color: $greencolor3;
     z-index: 0;
   }
@@ -136,9 +148,52 @@
   }
 }
 
+@media screen and (min-width: 360px) and (max-width:600px) {
+
+    .mode-demploi {
+
+        .step_highlighted {
+            
+            display: none;
+        }
+
+        .step_highlightedMobie{
+
+            display: block !important;
+            z-index: 9;
+        }
+
+        .step {
+
+            display: none;
+        }
+        
+        .circle-top-1,
+        .circle-top-2,
+        .circle-top-3,
+        .circle-bot-1,
+        .circle-bot-2,
+        .circle-bot-3 {
+
+    display: none;
+  }
+    }
+
+    
+}
+
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .mode-demploi {
+
+    .step_highlightedMobie {
+
+        display: none;
+    }
+
+    
     .middle {
+
+        transform: scale(0.8);
     }
 
     .circle-top-1,
@@ -220,8 +275,5 @@
       background-color: $greencolor3;
       z-index: 1;
     }
-  }
-
-  @media screen and (min-width: 360px) and (max-width: 600px) {
   }
 }
