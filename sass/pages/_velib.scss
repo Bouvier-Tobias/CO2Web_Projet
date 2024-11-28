@@ -89,7 +89,9 @@
             font-weight: 500;
             text-align: center;
             width: 100%;
+
         }
+
 
 
 
@@ -112,6 +114,14 @@
 
     h3 {
         max-width: 360px;
+    }
+
+    #velib-2025 {
+        margin-top: 0;
+        //word-spacing: 0.5em;
+        font-size: 15px;
+        transform: scaleX(1.12);
+        width: 320px;
     }
 
 
