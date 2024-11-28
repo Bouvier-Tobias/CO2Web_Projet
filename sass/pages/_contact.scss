@@ -67,7 +67,11 @@
                         font-family: $primary-font;
                         display: flex;
                         margin: 20px 20px 20px 0px;
+
+
                     }
+
+
 
                 }
 
@@ -378,18 +382,38 @@
 
                     .form-row {
                         max-width: 500px;
+                        gap: 20px;
+
+                        #nom {
+                            width: 110%;
+                        }
+
+                        #prenom {
+                            width: 110%;
+                        }
                     }
 
                     .form-row1 {
                         max-width: 800px;
                         display: flex;
                         flex-direction: column;
-                        gap: 1em;
+                        gap: 0em;
                         align-items: start;
 
                         input {
                             width: 245px;
+
+
+
                         }
+
+
+                    }
+
+
+
+                    #message {
+                        resize: none;
                     }
                 }
 
@@ -404,6 +428,7 @@
                     align-items: center;
                     text-align: center;
                     gap: 15px;
+                    padding-bottom: 10px;
                     //margin-top: 3%;
 
                     .btn_tel {
@@ -415,8 +440,8 @@
                         font-size: 1.2em;
                         font-family: $title-font;
                         font-weight: 500;
-                        width: 150px;
-                        height: 40px;
+                        width: 260px;
+                        height: 50px;
                         border: none;
                         border-radius: 100px;
                         box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.315);
@@ -432,6 +457,18 @@
 
 
                 }
+
+                .form-group {
+
+                    #label-message {
+
+                        display: flex;
+                        justify-content: start;
+
+                    }
+                }
+
+
             }
         }
 
