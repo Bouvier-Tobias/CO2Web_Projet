@@ -34,11 +34,18 @@ CO2WEB/
 │   │   └── co2-calculator.js  # Script pour le calculateur d'émissions
 │   └── images/
 ├── index.html                 # Page d'accueil
-├── emploi.html     # Page "Comment ça marche"
+├── emploi.html                # Page "Comment ça marche"
 ├── calculateur.html           # Page du calculateur
-├── velib.html      # Page "Trouver un Vélib"
-├── contact.html    # Page "Formulaire de contact"
+├── velib.html                 # Page "Trouver un Vélib"
+├── contact.html               # Page "Formulaire de contact"
 └── README.md                  # Fichier de documentation
 
 
 Ce fichier fournit des instructions claires pour l’installation et l’utilisation du projet, décrit ses fonctionnalités et garantit une documentation complète pour les collaborateurs.
+
+Developpeurs :
+
+https://github.com/Benben599
+https://github.com/Bouvier-Tobias
+https://github.com/Delbove-Lucas
+https://github.com/NassimHouat
