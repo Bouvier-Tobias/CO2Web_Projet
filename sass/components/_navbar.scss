@@ -30,26 +30,26 @@
     z-index: 2;
     display: none;
     background-color: #fff;
-    margin: 34px;
-    height: 34px;
+    margin: 23px;
+    height: 23px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     position: relative;
 
     .container-lignes {
-      width: 29px;
-      height: 27px;
+      width: 23px;
+      height: 23px;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 15%);
 
       .ligne {
         background-color: $greencolor3;
         position: absolute;
         border-radius: 10px;
-        width: 28px;
+        width: 23px;
         height: 5px;
       }
     }
@@ -60,11 +60,11 @@
   }
 
   .box .ligne:nth-child(2) {
-    top: 10px;
+    top: 9px;
   }
 
   .box .ligne:nth-child(3) {
-    top: 20px;
+    top: 18px;
   }
 
   //animation button
