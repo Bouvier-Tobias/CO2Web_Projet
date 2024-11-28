@@ -45,7 +45,7 @@ Ce fichier fournit des instructions claires pour l’installation et l’utilisa
 
 Developpeurs :
 
-https://github.com/Benben599
-https://github.com/Bouvier-Tobias
-https://github.com/Delbove-Lucas
-https://github.com/NassimHouat
+- https://github.com/Benben599
+- https://github.com/Bouvier-Tobias
+- https://github.com/Delbove-Lucas
+- https://github.com/NassimHouat
