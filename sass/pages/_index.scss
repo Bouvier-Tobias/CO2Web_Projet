@@ -51,12 +51,10 @@ main {
 
         .index-begin-btn {
           background: rgb(181, 214, 83);
-          background: linear-gradient(
-            150deg,
-            rgba(181, 214, 83, 1) 0%,
-            rgba(121, 197, 88, 1) 32%,
-            rgba(61, 173, 92, 1) 74%
-          );
+          background: linear-gradient(150deg,
+              rgba(181, 214, 83, 1) 0%,
+              rgba(121, 197, 88, 1) 32%,
+              rgba(61, 173, 92, 1) 74%);
           color: $whitecolor;
           font-size: 1.2em;
           font-family: $title-font;
@@ -155,6 +153,7 @@ main {
 
   main {
     max-height: 100%;
+
     section {
       display: flex;
       max-width: 100%;
@@ -209,7 +208,7 @@ main {
       }
 
       .index-container {
-        margin-top: 220px;
+        margin-top: 210px;
         margin-left: 0px;
         display: flex;
         justify-content: start;
