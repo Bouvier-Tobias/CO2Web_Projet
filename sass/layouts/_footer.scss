@@ -1,10 +1,11 @@
 footer {
   bottom: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: auto;
+  // height: 100%;
   border-top: 2.5px solid $greencolor2;
   background-color: white;
+  z-index: -1;
 
   .footer-links {
     display: flex;
@@ -14,7 +15,6 @@ footer {
     overflow: hidden;
 
     .copyright {
-
       display: none;
     }
 
