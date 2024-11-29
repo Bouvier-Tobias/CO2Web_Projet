@@ -33,6 +33,7 @@ Elle s'adapte dynamiquement pour garantir une expérience utilisateur optimale, 
 ---
 
 Utilisation 🛠️
+
 Calculateur d’émissions de CO2
 
     Rendez-vous sur la page Calculateur.
