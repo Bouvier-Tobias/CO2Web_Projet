@@ -340,6 +340,13 @@
     width: 100%;
     overflow: hidden;
 
+    #main-apropos {
+      display: flex;
+      flex-direction: column;
+      height: 100vh; 
+      overflow: hidden; 
+      justify-content: space-between; }
+
     .slider {
       width: 200vw;
 
@@ -464,6 +471,13 @@
     width: 100%;
     overflow: hidden;
 
+    #main-apropos {
+      display: flex;
+      flex-direction: column;
+      height: 100vh; 
+      overflow: hidden; 
+      justify-content: space-between; }
+
     .slider {
       width: 200vw;
 
@@ -519,7 +533,7 @@
             display: block;
             font-size: 90%;
             font-weight: 400;
-            line-height: 150%;
+            line-height: 120%;
             width: 90%;
             text-align: start;
             padding-bottom: 10px;
