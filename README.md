@@ -54,19 +54,20 @@ Trouver un Vélib (bientôt disponible)
 CO2WEB/
 ├── assets/
 │   ├── css/
-│   │   └── styles.css         # Fichier principal CSS (suivant BEM)
+│   │   └── styles.css          # Fichier principal CSS (suivant BEM)
 │   ├── js/
-│   │   ├── menu-burger.js     # Script pour le menu mobile
-│   │   ├── slideshow.js       # Script pour le slide show
-│   │   ├── countdown.js       # Script pour le compte à rebours
-│   │   └── co2-calculator.js  # Script pour le calculateur d'émissions
-│   └── images/
-├── index.html                 # Page d'accueil
-├── emploi.html                # Page "Comment ça marche"
-├── calculateur.html           # Page du calculateur
-├── velib.html                 # Page "Trouver un Vélib"
-├── contact.html               # Page "Formulaire de contact"
-└── README.md                  # Fichier de documentation
+│   │   ├── menu-burger.js      # Script pour le menu mobile
+│   │   ├── slideshow.js        # Script pour le slide show
+│   │   ├── countdown.js        # Script pour le compte à rebours
+│   │   └── co2-calculator.js   # Script pour le calculateur d'émissions
+│   └── images/                 # Dossier contenant les ressources visuelles
+├── index.html                  # Page d'accueil
+├── emploi.html                 # Page "Comment ça marche"
+├── calculateur.html            # Page du calculateur
+├── velib.html                  # Page "Trouver un Vélib"
+├── contact.html                # Page "Formulaire de contact"
+└── README.md                   # Fichier de documentation
+
 
 
 Ce fichier fournit des instructions claires pour l’installation et l’utilisation du projet, décrit ses fonctionnalités et garantit une documentation complète pour les collaborateurs.
