@@ -32,47 +32,54 @@ Elle s'adapte dynamiquement pour garantir une expérience utilisateur optimale, 
 
 ---
 
-Utilisation 🛠️
+## **Utilisation** 🛠️
 
-Calculateur d’émissions de CO2
+### **Calculateur d’émissions de CO2**
 
     Rendez-vous sur la page Calculateur.
     Entrez la distance de votre trajet domicile-travail en kilomètres.
     Cliquez sur Calculer pour obtenir les émissions en kg de CO2.
 
-Découvrir le fonctionnement
+### **Découvrir le fonctionnement**
 
     Consultez la page "Comment ça marche" pour comprendre les impacts environnementaux.
     Faites défiler le diaporama pour des explications interactives.
 
-Trouver un Vélib (bientôt disponible)
+### **Trouver un Vélib (bientôt disponible)**
 
     Patientez avec le compte à rebours jusqu’à l’activation complète de cette fonctionnalité !
 
-## **Structure du projet** 📂
+## **Structure du projet CO2WEB** 📂
 
-CO2WEB/
-├── assets/
-│   ├── css/
-│   │   └── styles.css          # Fichier principal CSS (suivant BEM)
-│   ├── js/
-│   │   ├── menu-burger.js      # Script pour le menu mobile
-│   │   ├── slideshow.js        # Script pour le slide show
-│   │   ├── countdown.js        # Script pour le compte à rebours
-│   │   └── co2-calculator.js   # Script pour le calculateur d'émissions
-│   └── images/                 # Dossier contenant les ressources visuelles
-├── index.html                  # Page d'accueil
-├── emploi.html                 # Page "Comment ça marche"
-├── calculateur.html            # Page du calculateur
-├── velib.html                  # Page "Trouver un Vélib"
-├── contact.html                # Page "Formulaire de contact"
-└── README.md                   # Fichier de documentation
 
+    Dossier assets/ : Contient tous les fichiers et ressources nécessaires au design et aux fonctionnalités.
+
+        Sous-dossier css/ :
+            styles.css : Fichier principal de style utilisant la méthodologie BEM.
+
+        Sous-dossier js/ :
+            menu-burger.js : Script pour gérer le menu burger sur mobile.
+            slideshow.js : Script pour le diaporama sur la page "Comment ça marche".
+            countdown.js : Script pour le compte à rebours sur la page "Trouver un Vélib".
+            co2-calculator.js : Script pour le calculateur d'émissions de CO2.
+
+        Sous-dossier images/ :
+            Contient toutes les ressources visuelles (logos, icônes, illustrations, etc.).
+
+    Pages HTML :
+        index.html : Page d'accueil du site.
+        emploi.html : Page "Comment ça marche", qui explique le fonctionnement de l'application.
+        calculateur.html : Page dédiée au calculateur d'émissions de CO2.
+        velib.html : Page "Trouver un Vélib", avec un compte à rebours en attendant le développement complet.
+        contact.html : Page avec un formulaire de contact.
+
+    Fichier de documentation :
+        README.md : Document explicatif détaillant le projet, son installation et ses fonctionnalités.
 
 
 Ce fichier fournit des instructions claires pour l’installation et l’utilisation du projet, décrit ses fonctionnalités et garantit une documentation complète pour les collaborateurs.
 
-Équipe de développement 👨‍💻 :
+## **Équipe de développement** 👨‍💻 :
 
 - https://github.com/Benben599
 - https://github.com/Bouvier-Tobias
